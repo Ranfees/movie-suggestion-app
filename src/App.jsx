@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 function Card({title}){
 
 const [liked,setLiked]= useState(false);
+
+useEffect(()=>{
+  console.log(`${title}has liked:${liked}`)
+})
 
   return(
     <div className='movie-card'>
