@@ -7,13 +7,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-
-        {/* Logo */}
         <div className="logo">
-          <span>🎬</span> MovieSuggest
+          🎬 MovieSuggest
         </div>
 
-        {/* Desktop Menu */}
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
           <a href="/">Home</a>
           <a href="/movies">Movies</a>
@@ -21,20 +18,17 @@ function Navbar() {
           <a href="/favorites">Favorites</a>
         </div>
 
-        {/* Search */}
         <div className="search-box">
           <input type="text" placeholder="Search movies..." />
           <button>🔍</button>
         </div>
 
-        {/* Hamburger */}
         <button
           className="menu-btn"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
         </button>
-
       </div>
     </nav>
   );
