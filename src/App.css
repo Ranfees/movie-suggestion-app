@@ -299,6 +299,7 @@ body {
 
 .movie-card:hover {
   transform: translateY(-8px);
+  z-index: 1000;
 }
 
 .movie-poster {
